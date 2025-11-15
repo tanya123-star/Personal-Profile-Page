@@ -3,39 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        
 </head>
-
 <body>
+    <!-- Header -->
     <header>
-        <h1>TANYA FONTANILLA</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Service">Services</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section id="Home" class="Home">
-        <div class="Home">
-            <div class="Profile-container">
-                <div class="shape"></div>
-                <img src="/asset/Profile.png" alt="Profile" class="Image">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Tanya Fontanilla</h1>
+                    <h2>Full Stack Developer</h2>
+                    <p>An aspiring Full Stack Developer with solid experience in front-end development using HTML, CSS, JavaScript, and React. Currently enhancing backend skills to build complete and functional web applications. Skilled in turning Figma designs into responsive interfaces and using Git for version control. Passionate about creating clean, user-focused digital solutions.</p>
+                    <div class="hero-btns">
+                        <a href="#services" class="btn">View My Services</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/asset/Profile.png" alt="Tanya Fontanilla" class="profile-img">
+                </div>
             </div>
-        <div class="Name">
-            
-        </div>
-
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Tanya</h3>
+                    <p>I am a BSIT student who is passionate about becoming a Full Stack Developer. I have no formal work experience yet, but I actively build projects to strengthen my skills. I enjoy working with HTML, CSS, JavaScript, and React to create clean and responsive interfaces.</p>
+                    <p>I am also learning the basics of backend development to understand how full web applications work. Most of my learning comes from school projects, self-study, and hands-on practice. I am motivated, eager to grow, and committed to improving as I prepare for real-world opportunities.</p>
+                    
+                    <h3 style="margin-top: 1.5rem;">My Skills</h3>
+                    <div class="skills">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">UI/UX Design</span>
+                        <span class="skill">MongoDB</span>
+                        <span class="skill">PostgreSQL</span>
+                        <span class="skill">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>What I offer</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern technologies like React, Vue, and Node.js for optimal performance and user experience.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform mobile applications using React Native and Flutter that work seamlessly on both iOS and Android devices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive user interfaces designed with a focus on user experience and accessibility standards.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Robust server-side solutions with RESTful APIs, database design, and cloud integration for scalable applications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Technical SEO implementation and optimization strategies to improve your website's visibility in search engines.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing maintenance, updates, and technical support to ensure your applications run smoothly and securely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="tanyafontanilla7@gmail.com">tanyafontanilla7@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+63 997-952-5632</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Philippines, Island Garden City of Samal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/tanya123-star?tab=repositories" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/tanya.fontanilla.56" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/tanya.fontanilla.56/" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Tanya Fontanilla. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 15, 35, 0.98)';
+            } else {
+                header.style.background = 'rgba(15, 15, 35, 0.95)';
+            }
+        });
+    </script>
 </body>
 </html>
+
